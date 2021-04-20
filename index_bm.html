@@ -1,0 +1,72 @@
+<!doctype HTML>
+<html lang="pl-PL">
+	<!--HEAD-->
+    <head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+		<meta name="author" content="Bastian Wierzchnicki">
+		<meta name="description" content="Calculator">
+		<meta name="keywords" content="HTML, CSS, JavaScript, Calculator">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style_bm.css">
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+		<script src="scripts/script.js"></script>
+    </head>
+	<!--BODY-->
+    <body>
+		<!--MAIN-->
+		<div id="main">
+			<!--HEADER-->
+			<div id="header">
+				<!--SWITCH-->
+				<label class="switch">
+					<input type="checkbox" id="checkbox" value="1" checked onclick="themeChanger()">
+					<span class="slider round"></span>
+				</label>
+				<!--TITLE-->
+				<div id="title"><text id="title_t">Calculator</text></div>
+			</div>
+			<!--BLOCK-->
+			<div id="block">
+				<!--LEFTBLOCK-->
+				<div id="l_block">
+					<!--OUTPUTWINDOW-->
+					<div id="output_block">
+						<div id="output_window">
+							<div id="equation"></div>
+							<div id="output"></div>
+						</div>
+					</div>
+					<!--PANEL-->
+					<div id="panel">
+						<div class="button_holder"> <div class="button_function" onclick="clearAll()">C</div> </div> <div class="button_holder"> <div class="button_function" onclick="backSpace()">&#x232b;</div> </div> <div class="button_holder"> <div class="button_function" onclick="inputFunctionPrc()">%</div> </div> <div class="button_holder"> <div class="button_function" onclick="inputFunctionDiv()">&#247;</div> </div>
+						<div class="button_holder"> <div class="button_number" onclick="inputNumber7()">7</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputNumber8()">8</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputNumber9()">9</div> </div> <div class="button_holder"> <div class="button_function" onclick="inputFunctionTimes()">x</div> </div>
+						<div class="button_holder"> <div class="button_number" onclick="inputNumber4()">4</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputNumber5()">5</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputNumber6()">6</div> </div> <div class="button_holder"> <div class="button_function" onclick="inputFunctionMinus()">-</div> </div>
+						<div class="button_holder"> <div class="button_number" onclick="inputNumber1()">1</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputNumber2()">2</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputNumber3()">3</div> </div> <div class="button_holder"> <div class="button_function" onclick="inputFunctionPlus()">+</div> </div>
+						<div class="button_holder_big"> <div class="button_number_big" onclick="inputNumber0()">0</div> </div> <div class="button_holder"> <div class="button_number" onclick="inputFunctionDot()">.</div> </div> <div class="button_holder"> <div class="button_function_equals" onclick="outputFunction()">=</div> </div>
+					</div>
+				</div>
+				<!--RIGHTBLOCK-->
+				<div id="r_block">
+					<!--HISTORYBLOCKS-->
+					
+				</div>
+			</div>
+			<!--BUTTONSRIGHT-->
+			<div id="buttons_right">
+				<div id="bin" onclick="historyClean()">🗑</div>
+				<div id="help" onclick="helperOpenerBm()">?</div>
+			</div>
+			<!--BUTTONSLEFT-->
+			<div id="buttons_left">
+				<div id="gb" onclick="languageChangerGb()"><img src="data/flag-icon/gb.svg" id="gb_img"></div>
+				<div id="pl" onclick="languageChangerPl()"><img src="data/flag-icon/pl.svg" id="pl_img"></div>
+				<div id="help"></div>
+			</div>
+			<!--FOOTER-->
+			<div id="footer">
+			</div>
+			<script src="scripts/script.js"></script>
+		</div>
+    </body>
+</html>

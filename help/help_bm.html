@@ -1,0 +1,122 @@
+<!doctype HTML>
+<html lang="pl-PL">
+	<!--HEAD-->
+    <head>
+		<meta charset="utf-8">
+		<title>Calculator - Help</title>
+		<meta name="author" content="Bastian Wierzchnicki">
+		<meta name="description" content="Calculator">
+		<meta name="keywords" content="HTML, CSS, JavaScript, Calculator">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/style_help_bm.css">
+		<script src="../scripts/script_help.js"></script>
+    </head>
+	<!--BODY-->
+    <body>
+		<!--MAIN-->
+		<div id="main">
+			<!--HEADER-->
+			<div id="header">
+				<!--SWITCH-->
+				<label class="switch">
+					<input type="checkbox" id="checkbox" value="1" checked onclick="themeChanger()">
+					<span class="slider round"></span>
+				</label>
+				<!--TITLE-->
+				<div id="title"><text id="title_t">Calculator - Help</text></div>
+			</div>
+			<div class="filler_top"></div>
+			<div id="block">
+				<div class="l_title">
+					<div class="l_main">keyboard shortcuts</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 0</div>
+					<div class="l_right">press <b>0</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 1</div>
+					<div class="l_right">press <b>1</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 2</div>
+					<div class="l_right">press <b>2</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 3</div>
+					<div class="l_right">press <b>3</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 4</div>
+					<div class="l_right">press <b>4</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 5</div>
+					<div class="l_right">press <b>5</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 6</div>
+					<div class="l_right">press <b>6</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 7</div>
+					<div class="l_right">press <b>7</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 8</div>
+					<div class="l_right">press <b>8</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard 9</div>
+					<div class="l_right">press <b>9</b> on your keyboard in order to <b>add it</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard C</div>
+					<div class="l_right">press <b>c</b> on your keyboard in order to <b>clear the output display</b></div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard &#129040;</div>
+					<div class="l_right">press <b>backspace</b> on your keyboard in order to <b>clear the equation</b></div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard ins</div>
+					<div class="l_right">press <b>insert</b> on your keyboard in order to <b>clear the equation history</b></div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Keyboard del</div>
+					<div class="l_right">press <b>delete</b> on your keyboard in order to <b>reset the calculator</b></div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Numpad + </div>
+					<div class="l_right">press <b>+</b> on your numpad in order to <b>add addition</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Numpad -</div>
+					<div class="l_right">press <b>-</b> on your numpad in order to <b>add substraction</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Numpad *</div>
+					<div class="l_right">press <b>*</b> on your numpad in order to <b>add multiplication</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Numpad /</div>
+					<div class="l_right">press <b>/</b> on your numpad in order to <b>add division</b> into the equation</div>
+				</div>
+				<div class="legend">
+					<div class="l_left">Numpad .</div>
+					<div class="l_right">press <b>.</b> on your numpad in order to <b>add comma</b> into the equation</div>
+				</div>
+			</div>
+			<div class="filler_bottom"></div>
+			<!--BIN-->
+			<div id="buttons_right">
+				<div id="back" onclick="backIndexBm()">&#8619;</div>
+			</div>
+			<!--BUTTONSLEFT-->
+			<div id="buttons_left">
+				<div id="gb"><img src="../data/flag-icon/gb.svg" id="gb_img"></div>
+				<div id="pl" onclick="languageChangerPlBm()"><img src="../data/flag-icon/pl.svg" id="pl_img"></div>
+			</div>
+		</div>
+    </body>
+</html>
