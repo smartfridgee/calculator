@@ -6,7 +6,7 @@ body{
 }
 
 #main{
-	width: 1000px;
+	max-width: 1000px;
 	height: 800px;
 	margin: auto;
 	margin-top: 25px;
