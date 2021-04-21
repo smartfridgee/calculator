@@ -213,7 +213,7 @@ function inputFunctionDot(){
 function outputFunction(){
 	let input = document.getElementById("output").innerHTML;
 	let output;
-	let language = document.getElementById("title").innerHTML;
+	let language = document.getElementById("title_t").innerHTML;
 	
 	if(language == "Calculator"){
 		language = "Enter a number";
