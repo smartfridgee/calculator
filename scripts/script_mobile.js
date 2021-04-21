@@ -1,40 +1,9 @@
-function themeChanger(){
-	var value = document.getElementById("checkbox").checked;
-	
-	setTimeout(function(){
-		if(value == false){
-			window.location.replace("index.html");
-		}
-		else if(value == true){
-			window.location.replace("index_bm.html");
-		}
-	}, 500);
-	
-	/*if(value == false){ //DARK
-		document.body.style.backgroundColor = "#212121";
-		document.body.style.color = "#e8e8e8";
-		document.getElementById("main").style.backgroundColor = "#333333";
-		document.getElementById("main").style.color = "#e8e8e8";
-		document.getElementById("title").style.color = "white";
-		document.getElementById("output_window").style.backgroundColor = "#363636";
-		document.getElementById("equation").style.color = "#d1d1d1";
-		document.getElementById("bin").style.color = "#ebebeb";
-		document.getElementById("bin").style.backgroundColor = "#242424";
-		document.getElementById("bin").style.border = "";
-	}
-	else if(value == true){ //BRIGHT
-		document.body.style.backgroundColor = "white";
-		document.body.style.color = "black";
-		document.getElementById("main").style.backgroundColor = "#f2f2f2";
-		document.getElementById("main").style.color = "black";
-		document.getElementById("title").style.color = "black";
-		document.getElementById("output_window").style.backgroundColor = "#e8e8e8";
-		document.getElementById("equation").style.color = "#2b2b2b";
-		document.getElementById("bin").style.color = "black";
-		document.getElementById("bin").style.backgroundColor = "white";
-	}*/
-	
-}
+$(document).ready(function() {
+    $(window).resize(function() {
+        var bodyheight = $(this).height();
+        $("#main").height(bodyheight - 15);
+    }).resize();
+});
 
 function removeLastChar(s) {
     return (s == null || s.length == 0)
@@ -42,16 +11,7 @@ function removeLastChar(s) {
       : (s.substring(0, s.length - 1));
 }
 
-function checkRes(){
-	var w = window.innerWidth;
-
-	if(w < 600){
-		window.location.replace("index_mobile.html");
-	}
-}
-
 window.onload = valueLoader;
-window.onload = checkRes;
 
 
 function valueLoader(){
@@ -75,14 +35,6 @@ function languageChangerPl(){
 	if(get == "Enter a number"){
 		document.getElementById("equation").innerHTML = "Wprowadź liczbę";
 	}
-}
-
-function helperOpener(){
-	window.location.replace("help/help.html");
-}
-
-function helperOpenerBm(){
-	window.location.replace("help/help_bm.html");
 }
 
 function inputNumber1(){
@@ -366,53 +318,6 @@ $(document).unbind('keydown').bind('keydown', function (e) {
 		console.log("none");
 	}
 });
-
-/*function keyInput(e){
-	var key = e.key;
-	
-	if(key == 0){
-		inputNumber0();
-	}
-	else if(key == 1){
-		inputNumber1();
-	}
-	else if(key == 2){
-		inputNumber2();
-	}
-	else if(key == 3){
-		inputNumber3();
-	}
-	else if(key == 4){
-		inputNumber4();
-	}
-	else if(key == 5){
-		inputNumber5();
-	}
-	else if(key == 6){
-		inputNumber6();
-	}
-	else if(key == 7){
-		inputNumber7();
-	}
-	else if(key == 8){
-		inputNumber8();
-	}
-	else if(key == 9){
-		inputNumber9();
-	}
-	else{
-		console.log("none");
-	}
-	
-}*/
-
-/*function historyFill(){
-	let result = document.getElementsByClassName("result").innerHTML;
-	let output = document.getElementsByClassName("output_h").innerHTML;
-	
-	document.getElementsByClassName("equation").innerHTML = result;
-	document.getElementsByClassName("output").innerHTML = output;
-}*/
 
 function backSpace(){
 	var s = document.getElementById("output").innerHTML;
