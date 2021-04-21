@@ -203,12 +203,12 @@ body{
 }
 
 #back:hover{
-	background-color: #bababa;
+	background-color: #454545;
 	transition: 0.2s;
 }
 
 #back:active{
-	background-color: #a7a7a7;
+	background-color: #2e2e2e;
 	transition: 0.2s;
 }
 
