@@ -36,6 +36,12 @@ function themeChanger(){
 	
 }
 
+function removeLastChar(s) {
+    return (s == null || s.length == 0)
+      ? null 
+      : (s.substring(0, s.length - 1));
+}
+
 function checkRes(){
 	var w = window.innerWidth;
 
@@ -412,7 +418,8 @@ $(document).unbind('keydown').bind('keydown', function (e) {
 }*/
 
 function backSpace(){
-	document.getElementById("output").innerHTML = "";
+	var s = document.getElementById("output").innerHTML;
+	document.getElementById("output").innerHTML = removeLastChar(s);
 }
 
 function historyClean(){
