@@ -63,7 +63,7 @@ function valueLoader(){
 }
 
 function languageChangerGb(){
-	document.getElementById("title_t").innerHTML = "Calculator";
+	document.getElementById("title_t").innerHTML = "calculator";
 	let get = document.getElementById("equation").innerHTML;
 	
 	if(get == "Wprowadź liczbę"){
@@ -72,7 +72,7 @@ function languageChangerGb(){
 }
 
 function languageChangerPl(){
-	document.getElementById("title_t").innerHTML = "Kalkulator";
+	document.getElementById("title_t").innerHTML = "kalkulator";
 	let get = document.getElementById("equation").innerHTML;
 	
 	if(get == "Enter a number"){
@@ -221,10 +221,10 @@ function outputFunction(){
 	let output;
 	let language = document.getElementById("title_t").innerHTML;
 	
-	if(language == "Calculator"){
+	if(language == "calculator"){
 		language = "Enter a number";
 	}
-	else if(language == "Kalkulator"){
+	else if(language == "kalkulator"){
 		language = "Wprowadź liczbę";
 	}
 	console.log(language);
