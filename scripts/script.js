@@ -36,7 +36,20 @@ function themeChanger(){
 	
 }
 
+function checkRes(){
+	var w = window.innerWidth;
+
+	if(w < 600){
+			document.getElementById("buttons_right").innerHTML = "";
+			document.getElementById("buttons_left").innerHTML = "";
+			document.getElementById("switch").innerHTML = "";
+			document.body.style.fontFamily = "Arial";
+	}
+}
+
 window.onload = valueLoader;
+window.onload = checkRes;
+
 
 function valueLoader(){
 	document.getElementById("gb").value = 1;
