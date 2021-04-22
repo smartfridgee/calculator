@@ -5,6 +5,19 @@ $(document).ready(function() {
     }).resize();
 });
 
+$('#buttons_right').on('click', function(){
+  $('#pop').toggleClass("move");
+  $('#pop_header').toggleClass("on");
+  $('#pop_block').toggleClass("on");
+})
+
+$('#pop_back').on('click', function(){
+  $('#pop').toggleClass("move");
+  $('#pop_header').toggleClass("on");
+  $('#pop_block').toggleClass("on");
+})
+
+
 function removeLastChar(s) {
     return (s == null || s.length == 0)
       ? null 
@@ -197,7 +210,7 @@ function outputFunction(){
 	
 	
 	//history block
-	var hist = document.getElementById("r_block");
+	var hist = document.getElementById("pop_hblock");
 	var newcontent = document.createElement('div');
 	
 	newcontent.innerHTML = '<div class="block_holder"><div class="h_block">'+ result + " " + output +'</div> </div> </div>';
@@ -325,7 +338,7 @@ function backSpace(){
 }
 
 function historyClean(){
-	document.getElementById("r_block").innerHTML = "";
+	document.getElementById("pop_hblock").innerHTML = "";
 }
 
 function clearAll(){
