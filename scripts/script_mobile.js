@@ -7,14 +7,10 @@ $(document).ready(function() {
 
 $('#buttons_right').on('click', function(){
   $('#pop').toggleClass("move");
-  $('#pop_header').toggleClass("on");
-  $('#pop_block').toggleClass("on");
 })
 
 $('#pop_back').on('click', function(){
   $('#pop').toggleClass("move");
-  $('#pop_header').toggleClass("on");
-  $('#pop_block').toggleClass("on");
 })
 
 

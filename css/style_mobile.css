@@ -270,6 +270,7 @@ body{
 	transition: 1s;
 	background-color: #212121;
 	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.6);
+	overflow-x: hidden;
 	overflow: auto;
 }
 
@@ -296,14 +297,6 @@ body{
 #pop_button:active{
 	background-color: #2e2e2e;
 	transition: 0.2s;
-}
-
-#pop_header{
-	display: none;
-}
-
-#pop_header.on{
-	display: inherit;
 }
 
 #pop_back{
@@ -352,14 +345,6 @@ body{
 	top: -15px;
 	font-variant: small-caps;
 	font-size: 20px;
-}
-
-#pop_block{
-	display: none;
-}
-
-#pop_block.on{
-	display: inherit;
 }
 
 .block_holder{
